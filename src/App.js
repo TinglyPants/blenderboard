@@ -1,3 +1,4 @@
+import StyleIndicator from "./components/general/StyleIndicator";
 import Logo from "./components/structure/NavBar/Logo";
 import NavBar from "./components/structure/NavBar/NavBar";
 import Profile from "./components/structure/NavBar/Profile";
@@ -6,6 +7,7 @@ import SearchBar from "./components/structure/NavBar/SearchBar";
 export default function App() {
     return (
         <div className="bg-dark w-screen h-screen flex flex-col">
+            <StyleIndicator />
             <NavBar>
                 <Logo />
                 <SearchBar />
