@@ -18,7 +18,11 @@ export default function SearchBar() {
     };
 
     return (
-        <div className="w-full mx-[3rem] sm:mx-[6rem] p-5 bg-lightest flex items-center rounded-full text-white">
+        <div
+            className={
+                "p-5 bg-lightest flex items-center rounded-full text-white w-full mx-[1rem] sm:mx-[2rem] lg:mx-[4rem]"
+            }
+        >
             <input
                 type="text"
                 className="w-full bg-lightest focus:outline-none"

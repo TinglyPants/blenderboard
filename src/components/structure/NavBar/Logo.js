@@ -1,7 +1,7 @@
 export default function Logo() {
     return (
         <div
-            className="w-[16rem] ml-[4rem] flex align-bottom shrink-0 cursor-pointer hidden lg:flex"
+            className="align-bottom shrink-0 cursor-pointer w-[16rem] hidden md:flex ml-[2rem] lg:ml-[4rem]"
             onClick={() => console.log("Clicked Logo")}
         >
             <svg
