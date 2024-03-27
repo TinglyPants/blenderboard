@@ -1,4 +1,5 @@
 import StyleIndicator from "./components/general/StyleIndicator";
+import MainContent from "./components/structure/MainContent/MainContent";
 import Logo from "./components/structure/NavBar/Logo";
 import NavBar from "./components/structure/NavBar/NavBar";
 import Profile from "./components/structure/NavBar/Profile";
@@ -12,6 +13,7 @@ import {
     SettingsIcon,
     AccountIcon,
 } from "./components/SVGPATHS";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
     return (
@@ -37,7 +39,33 @@ export default function App() {
                         <p className="block sm:hidden text-3xl">+</p>
                     </button>
                 </SideBar>
-                {/*Router will go here */}
+                <MainContent>
+                    <Routes>
+                        <Route path="/" element={"HOME"} />
+                        <Route
+                            path="/search"
+                            element={"implement search focus here."}
+                        />
+                        <Route
+                            path="/results"
+                            element={"results for search query"}
+                        />
+                        <Route
+                            path="/settings"
+                            element={"Edit user preferences here"}
+                        />
+                        <Route
+                            path="/notifications"
+                            element={"view any notifications here ig"}
+                        />
+                        <Route
+                            path="/account"
+                            element={
+                                "this will show account info like pfp and bio and username and email and stuff"
+                            }
+                        />
+                    </Routes>
+                </MainContent>
             </div>
         </div>
     );
